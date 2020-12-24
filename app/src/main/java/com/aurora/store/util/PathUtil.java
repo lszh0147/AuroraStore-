@@ -95,15 +95,15 @@ public class PathUtil {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P && Util.isRootInstallEnabled(context)) {
             return context.getFilesDir().getPath();
         } else
-            return Environment.getExternalStorageDirectory().getPath() + "/Download/Aurora";
+            return Environment.getExternalStorageDirectory().getPath() + "/Download/AppStoreAurora";
     }
 
     static public String getExtBaseDirectory(Context context) {
-        return Environment.getExternalStorageDirectory().getPath() + "/Download/Aurora";
+        return Environment.getExternalStorageDirectory().getPath() + "/Download/AppStoreAurora";
     }
 
     static public String getBaseCopyDirectory() {
-        return Environment.getExternalStorageDirectory().getPath() + "/Download/Aurora/Copy/APK";
+        return Environment.getExternalStorageDirectory().getPath() + "/Download/AppStoreAurora/Copy/APK";
     }
 
     public static boolean fileExists(Context context, App app) {
